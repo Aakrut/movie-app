@@ -13,7 +13,6 @@ const Row2 = ({ titleRow,url}) => {
 
     useEffect(() => {
         axios.get(url).then((res) => {
-            console.log(res.data.results);
             setRow(res.data.results);
         }).catch((error) => {
             console.log(error.message);
